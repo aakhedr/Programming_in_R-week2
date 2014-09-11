@@ -1,4 +1,7 @@
 constructPaths <- function(directory, id) {
+        ## CONSTRUCTPATHS is a helper function
+        ## Takes in the directory name and file id (from 1:332) and returns a 
+        # a character vector of file paths 
         paths <- character(length(id))
         id <- as.character(id)
         for (i in 1:length(id)) {
