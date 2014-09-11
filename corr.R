@@ -1,4 +1,7 @@
 corr <- function(directory, threshold = 0) {
+        ## CORR calculates the correlation between the "sulfate" and "nitrate"
+        ## Takes in a directory name (where data is stored) and threshold of the
+        # number in complete observations in each data file.
         df <- complete(directory, id=1:332)
         correlations <- numeric(0)
 
